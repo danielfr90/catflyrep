@@ -1,5 +1,11 @@
 <?php
    $con=mysqli_connect("den1.mysql5.gear.host","catflyscore","Bn1F_75w1?tr","catflyscore");
+$sql="TRUNCATE TABLE globalhighscore";
+
+if (mysqli_query($con,$sql)) {
+      echo "Cleared old values successfully";
+   }
+
 	$score1 = $_GET["Score1"];
 	$score2 = $_GET["Score2"];
 	$score3 = $_GET["Score3"];

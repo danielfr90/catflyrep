@@ -7,7 +7,7 @@
 
    $result = mysqli_query($con,"SELECT * FROM globalhighscore");
    $row = mysqli_fetch_array($result);
-   $data = $row[0];
+   $data = $row[0] . "," . $row[1] . "," .$row[2] . "," . $row[3];
 
    if($data){
       echo $data;

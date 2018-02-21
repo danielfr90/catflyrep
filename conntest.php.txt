@@ -1,7 +1,7 @@
  <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
+$servername = "den1.mysql5.gear.host";
+$username = "catflyscore";
+$password = "Bn1F_75w1?tr";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);

@@ -8,10 +8,14 @@ $resulta = mysqli_query($con,$sqla);
 
 	
 
-	$score1 = $_POST["Score1"];
-	$score2 = $_POST["Score2"];
-	$score3 = $_POST["Score3"];
-	$score4 = $_POST["Score4"];
+	//$score1 = $_POST["Score1"];
+	//$score2 = $_POST["Score2"];
+	//$score3 = $_POST["Score3"];
+	//$score4 = $_POST["Score4"];
+	$score1 = 11;
+	$score2 = 11;
+	$score3 = 11;
+	$score4 = 11;
    $sqlb="INSERT INTO globalhighscore (Score1, Score2, Score3, Score4) VALUES (" . $score1 . "," . $score2 . "," .$score3 . "," .$score4 . ")";
 $resultb = mysqli_query($con,$sqlb);
 mysqli_close($con);

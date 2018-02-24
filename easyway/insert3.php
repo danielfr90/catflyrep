@@ -21,6 +21,15 @@ $score3 = $_POST["Score3"];
 
 //$sql = "INSERT INTO globalhighscore (Score1, Score2, Score3, Score4) VALUES (1,1,1,1)";
 
+$sqla="TRUNCATE TABLE globalhighscore";
+
+if (mysqli_query($conn, $sqla)) {
+    echo "New record created successfully 2";
+} else {
+    echo "Error: " . $sqla . "<br>" . mysqli_error($conn);
+}
+
+
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
 } else {

@@ -20,7 +20,8 @@ if ($con->connect_error) {
 	//$score2 = 11;
 	//$score3 = 11;
 	//$score4 = 11;
-   $sqlb="INSERT INTO globalhighscore (Score1, Score2, Score3, Score4) VALUES (1,1,1,1)"; //. $score1 . "," . $score2 . "," .$score3 . "," .$score4 . ")";
+   $sqlb="INSERT INTO globalhighscore (Score1, Score2, Score3, Score4) VALUES (1,1,1,1)"; 
+//. $score1 . "," . $score2 . "," .$score3 . "," .$score4 . ")";
 //$resultb = mysqli_query($con,$sqlb);
 //mysqli_close($con);
 if ($con->query($sqlb) === TRUE) {

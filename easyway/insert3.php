@@ -16,7 +16,7 @@ $score1 = $_POST["Score1"];
 $score3 = $_POST["Score3"];
 	$score4 = $_POST["Score4"];
 	
-   $sql="INSERT INTO globalhighscore (Score1, Score2, Score3, Score4) VALUES " . $score1 . "," . $score2 . "," . $score3 . "," . $score4 . ")";
+   $sql="INSERT INTO globalhighscore (Score1, Score2, Score3, Score4) VALUES (" . $score1 . "," . $score2 . "," . $score3 . "," . $score4 . ")";
 
 
 //$sql = "INSERT INTO globalhighscore (Score1, Score2, Score3, Score4) VALUES (1,1,1,1)";

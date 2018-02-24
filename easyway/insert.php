@@ -8,8 +8,9 @@ $sql="TRUNCATE TABLE globalhighscore";
 	$score3 = $_POST["Score3"];
 	$score4 = $_POST["Score4"];
    $sql="INSERT INTO globalhighscore (Score1, Score2, Score3, Score4) VALUES (" . $score1 . "," . $score2 . "," .$score3 . "," .$score4 . ")";
-	mysqli_close($con);
-$result = mysql_query($sql);
+$result = mysql_query($sql);	
+mysqli_close($con);
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }

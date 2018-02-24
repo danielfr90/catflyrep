@@ -30,11 +30,11 @@ if (mysqli_query($conn, $sqla)) {
 }
 
 
-if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
+//if (mysqli_query($conn, $sql)) {
+//    echo "New record created successfully";
+//} else {
+ //   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+//}
 
 mysqli_close($conn);
 ?> 

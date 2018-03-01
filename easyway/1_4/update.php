@@ -12,20 +12,17 @@ if (!$conn) {
 }
 
 
-//$sql = "INSERT INTO globalhighscore (Score1, Score2, Score3, Score4) VALUES (1,1,1,1)";
 
 
-$scorenr = 3; //$_POST["ScoreNr"];
-$amount = 123; //$_POST["Amount"];
-$name = "dings"; //$_POST["Name"];
+$scorenr = $_POST["ScoreNr"];
+$amount = $_POST["Amount"];
+$name = $_POST["Name"];
 
-	
-//$sql= "INSERT INTO globalhighscore (Score1, Score2, Score3, Score4) VALUES (" . $score1 . "," . $score2 . "," . $score3 . "," . $score4 . ")";
 
 $sql= "UPDATE `globalhighscorenew` SET `Amount`=" . $amount . ",`Name`='" . $name . "' WHERE `Score`=" . $scorenr;
 
 if (mysqli_multi_query($conn, $sql)) {
-    echo "New record created successfully";
+    echo "New update successfully";
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }

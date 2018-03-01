@@ -8,6 +8,10 @@
    $result = mysqli_query($con,"SELECT * FROM globalhighscorenew");
    $row = mysqli_fetch_array($result);
    $data = $row['Score'] . "," . $row['Amount'] . "," .$row['Name'] ;
+$row = mysqli_fetch_array($result);
+$data =$data . $row['Score'] . "," . $row['Amount'] . "," .$row['Name'] ;
+$row = mysqli_fetch_array($result);
+$data =$data . $row['Score'] . "," . $row['Amount'] . "," .$row['Name'] ;
 
    if($data){
       echo $data;

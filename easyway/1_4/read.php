@@ -11,6 +11,8 @@
    $row = mysqli_fetch_array($result);
    $data =$data . $row['Score'] . "," . $row['Amount'] . "," .$row['Name'] . ",";
    $row = mysqli_fetch_array($result);
+   $data =$data . $row['Score'] . "," . $row['Amount'] . "," .$row['Name'] . ",";
+   $row = mysqli_fetch_array($result);
    $data =$data . $row['Score'] . "," . $row['Amount'] . "," .$row['Name'] ;
 
    if($data){
